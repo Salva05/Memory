@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="top">MEMORY</div>
+        <div class="bottom" aria-hidden="true">MEMORY</div>
+    </section>
+
+    <div class="buttons">
+        <input type="button" id="pl" value="Play" onclick="start()">
+        <input type="button" id="l" value="Leaderboard" onclick="leaderboard()">
+        <input type="button" id="r" value="Restart" onclick="restart()">
+    </div>
+
+    <div id="leaderboard"></div>  <!--To hold the table of the leaderboard-->
+
+    <div class="difficulty" id="difficultyElement"> <!-- Added an ID to target the element -->
+        <label for="diff">Difficulty level</label>
+        <input type="range" min="2" class="level" max="52" id="difficultyRange">
+        <span id="difficultyValue">select</span>
+        <input type="button" class="go" value="start" onclick="play()">
+    </div>
+    <div id="d"></div>
+    <div id="message" style="color: rgb(0, 0, 0);"></div> <!-- Message element -->
+
+    <div class="start">
+        <img src="carte/card-back1.png" alt="carta simbolica" width="170px" height="250'px">
+        <img src="carte/card-back4.png" alt="carta simbolica" width="170px" height="250'px">
+        <img src="carte/card-back2.png" alt="carta simbolica" width="170px" height="250'px">
+    </div>
+    <div id="gameField"></div>
+    <div id="displayWin">
+        <p>YOU WON!!</p>
+    </div>
+</body>
+
+</html>
