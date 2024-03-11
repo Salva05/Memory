@@ -1,5 +1,5 @@
 # Memory
-A funny mini-game developed mainly in JavaScrip
+A funny mini-game developed mainly in JavaScript
 
 Try it in [Altervista](https://salvoits.altervista.org/memory/memory.htm)
 >[!NOTE]
